@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://ukflj3skpcca"]
+
+[ext_resource type="PackedScene" uid="uid://478fmqxls55k" path="res://AudioManager/Playlists/playlist.tscn" id="1_h0am7"]
+[ext_resource type="PackedScene" uid="uid://c1vydumb166vw" path="res://AudioManager/Loops/LoopScenes/Main/main_1.tscn" id="2_gwrve"]
+[ext_resource type="PackedScene" uid="uid://c0qv8468i7bs6" path="res://AudioManager/Loops/LoopScenes/Main/main_2.tscn" id="3_p0o5v"]
+[ext_resource type="PackedScene" uid="uid://b0nfl7yhnlrb8" path="res://AudioManager/Loops/LoopScenes/Main/main_3.tscn" id="4_ij8kf"]
+[ext_resource type="PackedScene" uid="uid://ddeku8cicrbpg" path="res://AudioManager/Loops/LoopScenes/Main/main_4.tscn" id="5_5oakd"]
+
+[node name="PlaylistMain" instance=ExtResource("1_h0am7")]
+default_length_seconds = 20.49
+default_bpm = 82
+default_bars = 7
+default_beats_per_bar = 4
+default_transition_on_bar = 2
+
+[node name="Main1" parent="." index="0" instance=ExtResource("2_gwrve")]
+transitions = {
+1.0: 2
+}
+
+[node name="Main2" parent="." index="1" instance=ExtResource("3_p0o5v")]
+repetitions_max = 2
+repetitions_min = 1
+repetition_chance = 0.5
+transitions = {
+1.0: 3
+}
+
+[node name="Main3" parent="." index="2" instance=ExtResource("4_ij8kf")]
+transitions = {
+1.0: 4
+}
+
+[node name="Main4" parent="." index="3" instance=ExtResource("5_5oakd")]
+repetitions_max = 2
+repetitions_min = 1
+repetition_chance = 0.5
+transitions = {
+1.0: 1
+}

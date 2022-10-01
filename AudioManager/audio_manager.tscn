@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=3 uid="uid://cqk5a0f6ibpjj"]
+
+[ext_resource type="Script" path="res://AudioManager/audio_manager.gd" id="1_jpmyi"]
+[ext_resource type="PackedScene" uid="uid://bx4vwqiwg23lu" path="res://AudioManager/Playlists/PlaylistScenes/playlist_intro.tscn" id="2_5a0bv"]
+[ext_resource type="PackedScene" uid="uid://ukflj3skpcca" path="res://AudioManager/Playlists/PlaylistScenes/playlist_main.tscn" id="3_nn30j"]
+
+[node name="AudioManager" type="Node"]
+script = ExtResource("1_jpmyi")
+
+[node name="PlaylistIntro" parent="." instance=ExtResource("2_5a0bv")]
+
+[node name="PlaylistMain" parent="." instance=ExtResource("3_nn30j")]

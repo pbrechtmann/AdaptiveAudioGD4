@@ -1,0 +1,43 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+_global_script_classes=[{
+"base": "Node",
+"class": &"AudioManager",
+"language": &"GDScript",
+"path": "res://AudioManager/audio_manager.gd"
+}, {
+"base": "Node",
+"class": &"Loop",
+"language": &"GDScript",
+"path": "res://AudioManager/Loops/loop.gd"
+}, {
+"base": "Node",
+"class": &"Playlist",
+"language": &"GDScript",
+"path": "res://AudioManager/Playlists/playlist.gd"
+}, {
+"base": "Node",
+"class": &"StemGenerator",
+"language": &"GDScript",
+"path": "res://AudioManager/Loops/stem_generator.gd"
+}]
+_global_script_class_icons={
+"AudioManager": "",
+"Loop": "",
+"Playlist": "",
+"StemGenerator": ""
+}
+
+[application]
+
+config/name="Adaptive Audio Gd 4"
+config/features=PackedStringArray("4.0", "Vulkan Clustered")
+config/icon="res://icon.svg"

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctb8tdh57jky7"]
+
+[ext_resource type="PackedScene" uid="uid://bv4s6jqaqw3i8" path="res://AudioManager/Loops/loop.tscn" id="1_py031"]
+[ext_resource type="AudioStream" uid="uid://dq5l5ufvdo8y2" path="res://Music/Synthwave fight music 82bpm 4_4 Fight Intro Loop 4.wav" id="2_yohow"]
+
+[node name="Intro4" instance=ExtResource("1_py031")]
+
+[node name="@@21763" type="AudioStreamPlayer" parent="Stems" index="0"]
+stream = ExtResource("2_yohow")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://478fmqxls55k"]
+
+[ext_resource type="Script" path="res://AudioManager/Playlists/playlist.gd" id="1_ov4cn"]
+
+[node name="Playlist" type="Node"]
+script = ExtResource("1_ov4cn")

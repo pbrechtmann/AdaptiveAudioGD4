@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://bx4vwqiwg23lu"]
+
+[ext_resource type="PackedScene" uid="uid://478fmqxls55k" path="res://AudioManager/Playlists/playlist.tscn" id="1_otbcm"]
+[ext_resource type="PackedScene" uid="uid://biqcd3e2lbukj" path="res://AudioManager/Loops/LoopScenes/Intro/intro_1.tscn" id="2_i45r5"]
+[ext_resource type="PackedScene" uid="uid://bj50ckq4qut0q" path="res://AudioManager/Loops/LoopScenes/Intro/intro_2.tscn" id="3_4xpy6"]
+[ext_resource type="PackedScene" uid="uid://r5ye40u2yjvf" path="res://AudioManager/Loops/LoopScenes/Intro/intro_3.tscn" id="4_uuaec"]
+[ext_resource type="PackedScene" uid="uid://ctb8tdh57jky7" path="res://AudioManager/Loops/LoopScenes/Intro/intro_4.tscn" id="5_hw7eu"]
+
+[node name="PlaylistIntro" instance=ExtResource("1_otbcm")]
+default_length_seconds = 20.49
+default_bpm = 82
+default_bars = 7
+default_beats_per_bar = 4
+default_transition_on_bar = 2
+
+[node name="Intro1" parent="." index="0" instance=ExtResource("2_i45r5")]
+transitions = {
+1.0: 2
+}
+
+[node name="Intro2" parent="." index="1" instance=ExtResource("3_4xpy6")]
+transitions = {
+1.0: 3
+}
+
+[node name="Intro3" parent="." index="2" instance=ExtResource("4_uuaec")]
+transitions = {
+1.0: 4
+}
+
+[node name="Intro4" parent="." index="3" instance=ExtResource("5_hw7eu")]
+transitions = {
+1.0: 1
+}

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://g6k8umlw4dw5"
+path="res://.godot/imported/Synthwave fight music 82bpm 4_4 Fight Main Loop 4.wav-c0dc37d7814bd3ee9a5f8b1b01e92fdf.sample"
+
+[deps]
+
+source_file="res://Music/Synthwave fight music 82bpm 4_4 Fight Main Loop 4.wav"
+dest_files=["res://.godot/imported/Synthwave fight music 82bpm 4_4 Fight Main Loop 4.wav-c0dc37d7814bd3ee9a5f8b1b01e92fdf.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

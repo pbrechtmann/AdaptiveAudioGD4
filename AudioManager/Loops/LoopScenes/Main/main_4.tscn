@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://ddeku8cicrbpg"]
+
+[ext_resource type="PackedScene" uid="uid://bv4s6jqaqw3i8" path="res://AudioManager/Loops/loop.tscn" id="1_xdvy1"]
+[ext_resource type="AudioStream" uid="uid://g6k8umlw4dw5" path="res://Music/Synthwave fight music 82bpm 4_4 Fight Main Loop 4.wav" id="2_kbaka"]
+
+[node name="Main4" instance=ExtResource("1_xdvy1")]
+
+[node name="@@26494" type="AudioStreamPlayer" parent="Stems" index="0"]
+stream = ExtResource("2_kbaka")
